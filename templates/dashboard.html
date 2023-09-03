@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<hr>
+<h3 class="text-center">Kontrol Paneli</h3>
+<p class="text-center"><small>Hoşgeldin, {{session["username"]}}</small> <i class="bi bi-patch-check-fill" style="color:#1DA1F2;"></i></p>
+<hr>
+<a href="/addarticle" class="btn btn-danger">Makale Ekle</a>
+<a href="/deneme" class="btn btn-danger">Deneme Makaleye Git</a>
+
+
+{% endblock body %}

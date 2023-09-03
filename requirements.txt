@@ -1,0 +1,6 @@
+Flask
+Flask-MySQLdb
+mysql-connector-python
+passlib
+WTForms
+email_validator

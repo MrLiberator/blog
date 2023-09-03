@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Css Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Bootstrap Icon Css Cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>{% block title %}{% endblock title %}</title>
+    <!-- CkEditor4 Cdn -->
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar-->
+    {% include "includes/navbar.html" %}
+
+    <!-- Block Body -->
+    <div class="container">
+        <!-- Flash Mesaj Bölümü -->
+        {% include 'help/messages.html' %}
+
+        <!-- Block Body-->
+        {% block body %}{% endblock body %}
+    </div>
+    
+    <!-- Bootstrap Javascript Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- CkEditor4 Cdn -->
+    <script>
+        CKEDITOR.replace( 'content' );
+    </script>
+</body>
+</html>
