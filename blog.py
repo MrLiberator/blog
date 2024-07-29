@@ -7,10 +7,10 @@ from flask import Flask,render_template,flash,redirect,url_for,session,logging,r
 
 # ----------------- Veritabanı Bağlantısı ----------------- #
 con = mysql.connector.connect(
-  host="31.186.11.139",
-  user="kitc9listecomtr_denemee",
-  password="!Deneme123",
-  db="kitc9listecomtr_deneme")
+  host="",
+  user="",
+  password="",
+  db="")
 # --------------------------------------------------------- #
 
 # --------------------- Form İşlemleri -------------------- #
